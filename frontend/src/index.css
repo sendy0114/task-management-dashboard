@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary Purple: #5B5FED (buttons, active states) */
+  --color-primary-purple: #5B5FED;
+
+  /* Sidebar Dark: #2D2D2D */
+  --color-sidebar-dark: #2D2D2D;
+
+  /* Background: #F5F5F5 (light gray) */
+  --color-bg-light: #F5F5F5;
+
+  /* Status Colors */
+  --color-status-pending: #FFB84D;
+  --color-status-progress: #9B8FED;
+  --color-status-completed: #4CAF50;
+
+  --font-inter: "Inter", system-ui, sans-serif;
+
+  --radius-xl: 12px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-inter);
+  background-color: var(--color-bg-light);
+  color: #333;
+}
+
+/* Base Utility Classes for Transitions */
+.transition-standard {
+  transition: all 200ms ease-in-out;
+}
+
+/* Glassmorphism utility for later use if needed */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
